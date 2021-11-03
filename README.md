@@ -2,7 +2,7 @@
 > CRA([Create React App](https://github.com/facebook/create-react-app)) 없이 리액트 개발 환경을 이해하고 템플릿 만들어보기
 
 ### 과정 기록물/참고자료 
-- [블로그 공부 기록]()
+- [블로그 공부 기록](https://ghoon99.tistory.com/61)
 - [참고사항- Webpack](https://webpack.js.org/) 
 - [참고사항- Babel](https://babeljs.io/) 
 
