@@ -52,4 +52,15 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
+
+  // 개발 서버 오픈
+  devServer: {
+    host: "localhost",
+    port: 3000,
+    open: true,
+    hot: true,
+    client: {
+      reconnect: 1, // 재 접속 시도 횟수
+    },
+  },
 };
