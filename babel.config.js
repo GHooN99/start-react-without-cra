@@ -4,7 +4,7 @@ module.exports = {
       // es5로 변환
       "@babel/preset-env",
       {
-        target: {
+        targets: {
           esmodules: true,
         },
       },

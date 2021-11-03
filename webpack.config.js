@@ -11,7 +11,7 @@ module.exports = {
     // 파일 이름은 해시값을 붙여 만들음
     filename: "bundle.[chunkhash].js",
     // 경로는 path절대경로로 설정 , /build 폴더에 결과물 만들음
-    path: path.resolve(__dirname, "/build"),
+    path: path.resolve(__dirname + "/build"),
   },
 
   // MODULE 로더 , js 가 아닌 다른 파일을 웹팩이 이해 할 수 있게 함
@@ -52,6 +52,11 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
+
+  // webpack으로 읽을 파일들의 확장자
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
 
   // 개발 서버 오픈
   devServer: {
